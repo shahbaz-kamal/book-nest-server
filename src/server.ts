@@ -1,10 +1,10 @@
-import { Server } from "./../node_modules/@types/connect/index.d";
+import { Server } from "http";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import app from "./app";
 dotenv.config();
 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 async function main() {
   try {
@@ -20,4 +20,4 @@ async function main() {
   }
 }
 
-main()
+main();

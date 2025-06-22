@@ -13,7 +13,7 @@ This project is a RESTful Library Management System built using **Express**, **T
 ###
 
 ## 🔗 Live deployment link
-* * *
+###
 
 [book-nest-olive.vercel.app](https://book-nest-olive.vercel.app)
 
@@ -25,7 +25,7 @@ This project is a RESTful Library Management System built using **Express**, **T
 
 ## ✨ Features:
 
-* * *
+###
 
 - Create, read, update, and delete books
 - Borrow books with quantity checks and availability logic
@@ -38,7 +38,7 @@ This project is a RESTful Library Management System built using **Express**, **T
 
 ## 🛠 Technology Used
 
-* * *
+###
 
  <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
@@ -56,7 +56,7 @@ This project is a RESTful Library Management System built using **Express**, **T
 
 ## 💥 Dependencies:
 
-* * *
+###
 
 <p align="left">"cors": "^2.8.5",<br>    "dotenv": "^16.5.0",<br>    "express": "^5.1.0",<br>    "mongoose": "^8.16.0",<br>    "validator": "^13.15.15"</p
 
@@ -64,7 +64,7 @@ This project is a RESTful Library Management System built using **Express**, **T
 
 ## 💥Dev Dependencies:
 
-* * *
+###
 
 <p align="left">"@eslint/js": "^9.29.0",<br>    "@types/cors": "^2.8.19",<br>    "@types/express": "^5.0.3",<br>    "@types/validator": "^13.15.2",<br>    "@typescript-eslint/eslint-plugin": "^8.34.1",<br>    "@typescript-eslint/parser": "^8.34.1",<br>    "eslint": "^9.29.0",<br>    "typescript": "^5.8.3"</p>
 
@@ -72,7 +72,7 @@ This project is a RESTful Library Management System built using **Express**, **T
 
 ## ✨ Sample Request (Must follow this structure)
 
-* * *
+###
 
 ### 1\. Create Book
 
@@ -143,7 +143,7 @@ Supports filtering, and sorting.
 ###
 
 ## 🔧 Installation Guidline:
-* * *
+
 ###
 
 1. First clone the project by running

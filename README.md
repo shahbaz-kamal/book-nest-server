@@ -8,13 +8,13 @@
 
 ###
 
-<p align="left">This project is a RESTful Library Management System built using **Express**, **TypeScript**, and **MongoDB (Mongoose)**. It allows users to manage book records and borrowing operations with proper validation, business logic, and data aggregation.</p>
+<h1 align="left">This project is a RESTful Library Management System built using **Express**, **TypeScript**, and **MongoDB (Mongoose)**. It allows users to manage book records and borrowing operations with proper validation, business logic, and data aggregation.</h1>
 
 ###
 
-## 🔗 Frontend Githup repo
+## 🔗 Live deployment link
 
-<p align="left">https://github.com/shahbaz-kamal/quiz-digitizer-client.git</p>
+<p align="left">book-nest-olive.vercel.app</p>
 
 <!-- ###
 <!-- ## 👨‍💼 Admin Info
@@ -60,6 +60,7 @@
 <p align="left">"cors": "^2.8.5",<br>    "dotenv": "^16.5.0",<br>    "express": "^5.1.0",<br>    "mongoose": "^8.16.0",<br>    "validator": "^13.15.15"</p
 
 ###
+
 ## 💥Dev Dependencies:
 
 ###
@@ -68,11 +69,68 @@
 
 ###
 
+## ✨ Sample Request (Must follow this structure)
 
+### 1\. Create Book
+
+**POST** `/api/books`
+
+#### Request:
+
+```json
+{
+  "title": "The Theory of Everything",
+  "author": "Stephen Hawking",
+  "genre": "SCIENCE",
+  "isbn": "9780553380163",
+  "description": "An overview of cosmology and black holes.",
+  "copies": 5,
+  "available": true
+}
+```
+
+### 2\. Get All Books
+
+**GET** `/api/books`
+
+Supports filtering, and sorting.
+
+#### Example Query:
+
+`/api/books?filter=FANTASY&sortBy=createdAt&sort=desc&limit=5`
+
+#### Query Parameters:
+
+*   `filter`: Filter by genre
+*   `sort`: `asc` or `desc`
+*   `limit`: Number of results (default: 10)
+
+
+### 3\. Get Book by ID
+
+**GET** `/api/books/:bookId`
+
+### 4\. Update Book
+
+**PUT** `/api/books/:bookId`
+
+#### Request:
+
+```json
+{
+  "copies": 50
+}
+```
+### 5\. Delete Book
+
+**DELETE** `/api/books/:bookId`
+
+
+### 6\. Borrow a Book
+
+**POST** `/api/borrow`
 
 ## 🔧 Installation Guidline:
-
-
 
 ###
 
@@ -107,6 +165,7 @@ DB_PASS=***************************
 ```bash
 npm run build
 ```
+
 5. Run the following command and open the website locally on port 5000:
 
 ```bash
@@ -114,5 +173,3 @@ npm start
 ```
 
 ###
-
-

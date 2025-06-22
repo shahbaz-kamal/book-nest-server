@@ -20,7 +20,8 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 
-app.use((req: Request, res: Response) => {
+// handles 404 error
+app.use((req: Request, res: Response,next:NextFunction) => {
   res.status(404).json({
     message: "Route Not Found",
     success: false,
@@ -29,6 +30,7 @@ app.use((req: Request, res: Response) => {
       details: `Cannot ${req.method} ${req.originalUrl}`,
     },
   });
+  next()
 });
 
 // app.use((error: any, req: Request, res: Response, next: NextFunction) => {
@@ -46,7 +48,7 @@ app.use((req: Request, res: Response) => {
 //     error: error.message,
 //   });
 // });
-app.use((error: any, req: Request, res: Response) => {
+app.use((error: any, req: Request, res: Response,next:NextFunction) => {
   if (error.name === "ValidationError") {
     res.status(400).json({
       message: "Validation failed",

@@ -19,7 +19,8 @@ app.use("/api/borrow", borrow_route_1.borrowRoutes);
 app.get("/", (req, res) => {
     res.send("Book nest is running  ");
 });
-app.use((req, res) => {
+// handles 404 error
+app.use((req, res, next) => {
     res.status(404).json({
         message: "Route Not Found",
         success: false,
@@ -28,6 +29,7 @@ app.use((req, res) => {
             details: `Cannot ${req.method} ${req.originalUrl}`,
         },
     });
+    next();
 });
 // app.use((error: any, req: Request, res: Response, next: NextFunction) => {
 //   if (error.name === "ValidationError") {
@@ -44,7 +46,7 @@ app.use((req, res) => {
 //     error: error.message,
 //   });
 // });
-app.use((error, req, res) => {
+app.use((error, req, res, next) => {
     if (error.name === "ValidationError") {
         res.status(400).json({
             message: "Validation failed",

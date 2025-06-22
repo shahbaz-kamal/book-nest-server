@@ -26,7 +26,7 @@ export const getAllBooks = async (
 ) => {
   try {
     const { filter, sortBy, sort, limit } = req.query;
-    console.log(filter, sortBy, sort, limit);
+    // console.log(filter, sortBy, sort, limit);
 
     let queryFilter: any = {};
     let querySort: any = {};
@@ -47,7 +47,7 @@ export const getAllBooks = async (
     const books = await Books.find(queryFilter)
       .sort(querySort)
       .limit(queryLimit);
-    console.log(books);
+    // console.log(books);
     res.status(200).json({
       success: true,
       message: "Books retrieved successfully",

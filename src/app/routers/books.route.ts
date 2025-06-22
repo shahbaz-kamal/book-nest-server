@@ -5,7 +5,7 @@ import {
   getAllBooks,
   getSingleBookById,
   updateBook,
-} from "../controllers/books.controllers";
+} from "../controllers/books.controller";
 export const booksRoutes = express.Router();
 
 booksRoutes.post("/", createBook);

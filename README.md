@@ -8,13 +8,13 @@
 
 ###
 
-<p align="left">This project is a RESTful Library Management System built using **Express**, **TypeScript**, and **MongoDB (Mongoose)**. It allows users to manage book records and borrowing operations with proper validation, business logic, and data aggregation.</p>
+This project is a RESTful Library Management System built using **Express**, **TypeScript**, and **MongoDB (Mongoose)**. It allows users to manage book records and borrowing operations with proper validation, business logic, and data aggregation.
 
 ###
 
 ## 🔗 Live deployment link
 
-<p align="left">book-nest-olive.vercel.app</p>
+[book-nest-olive.vercel.app](https://book-nest-olive.vercel.app)
 
 <!-- ###
 <!-- ## 👨‍💼 Admin Info

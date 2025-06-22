@@ -1,6 +1,7 @@
 import express, { Application, NextFunction, Request, Response } from "express";
-import { logger } from "./utils/logger";
+import { logger } from "./app/middlewares/logger";
 import { booksRoutes } from "./app/routers/books.route";
+import { borrowRoutes } from "./app/routers/borrow.route";
 
 const app: Application = express();
 
@@ -10,6 +11,7 @@ app.use(logger);
 
 //using routes
 app.use("/api/books", booksRoutes);
+app.use("/api/borrow",borrowRoutes)
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Book nest is running  ");

@@ -8,7 +8,7 @@
 
 ###
 
-<h1 align="left">This project is a RESTful Library Management System built using **Express**, **TypeScript**, and **MongoDB (Mongoose)**. It allows users to manage book records and borrowing operations with proper validation, business logic, and data aggregation.</h1>
+<p align="left">This project is a RESTful Library Management System built using **Express**, **TypeScript**, and **MongoDB (Mongoose)**. It allows users to manage book records and borrowing operations with proper validation, business logic, and data aggregation.</p>
 
 ###
 
@@ -101,10 +101,9 @@ Supports filtering, and sorting.
 
 #### Query Parameters:
 
-*   `filter`: Filter by genre
-*   `sort`: `asc` or `desc`
-*   `limit`: Number of results (default: 10)
-
+- `filter`: Filter by genre
+- `sort`: `asc` or `desc`
+- `limit`: Number of results (default: 10)
 
 ### 3\. Get Book by ID
 
@@ -121,10 +120,10 @@ Supports filtering, and sorting.
   "copies": 50
 }
 ```
+
 ### 5\. Delete Book
 
 **DELETE** `/api/books/:bookId`
-
 
 ### 6\. Borrow a Book
 

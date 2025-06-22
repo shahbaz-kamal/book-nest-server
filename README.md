@@ -140,6 +140,10 @@ Supports filtering, and sorting.
 
 **POST** `/api/borrow`
 
+### 7\. Borrowed Books Summary (Using Aggregation)
+
+`GET /api/borrow`
+
 ###
 
 ## 🔧 Installation Guidline:

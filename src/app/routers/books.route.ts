@@ -14,6 +14,6 @@ booksRoutes.get("/", getAllBooks);
 
 booksRoutes.get("/:bookId", getSingleBookById);
 
-booksRoutes.patch("/:bookId", updateBook);
+booksRoutes.put("/:bookId", updateBook);
 
 booksRoutes.delete("/:bookId", deleteBook);

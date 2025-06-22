@@ -47,8 +47,8 @@ export const getAllBooks = async (
     const books = await Books.find(queryFilter)
       .sort(querySort)
       .limit(queryLimit);
-console.log(books)
-    res.status(201).json({
+    console.log(books);
+    res.status(200).json({
       success: true,
       message: "Books retrieved successfully",
       data: books,
@@ -64,7 +64,13 @@ export const getSingleBookById = async (
   next: NextFunction
 ) => {
   try {
-    res.send("Get single book route by id has benn hit");
+    const bookId = req.params.bookId;
+    const book = await Books.findById(bookId);
+    res.status(200).json({
+      success: !book ? false : true,
+      message: !book ? "Book Not Found" : "Book retrieved successfully",
+      data: book,
+    });
   } catch (error: any) {
     next(error);
   }
@@ -76,7 +82,18 @@ export const updateBook = async (
   next: NextFunction
 ) => {
   try {
-    res.send("Update book route by id has benn hit");
+    const bookId = req.params.bookId;
+    const body = req.body;
+    const book = await Books.findByIdAndUpdate(bookId, body, {
+      new: true,
+      runValidators: true,
+    });
+
+    res.status(200).json({
+      success: true,
+      message: "Book updated successfully",
+      data: book,
+    });
   } catch (error: any) {
     next(error);
   }
@@ -88,7 +105,13 @@ export const deleteBook = async (
   next: NextFunction
 ) => {
   try {
-    res.send("Delete book route by id has benn hit");
+    const bookId = req.params.bookId;
+    await Books.findByIdAndDelete(bookId);
+    res.status(200).json({
+      success: true,
+      message: "Book deleted successfully",
+      data: null,
+    });
   } catch (error: any) {
     next(error);
   }

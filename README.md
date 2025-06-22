@@ -88,7 +88,7 @@ This project is a RESTful Library Management System built using **Express**, **T
   "available": true
 }
 ```
-
+* * *
 ### 2\. Get All Books
 
 **GET** `/api/books`
@@ -104,10 +104,13 @@ Supports filtering, and sorting.
 - `filter`: Filter by genre
 - `sort`: `asc` or `desc`
 - `limit`: Number of results (default: 10)
+* * *
 
 ### 3\. Get Book by ID
 
 **GET** `/api/books/:bookId`
+
+* * *
 
 ### 4\. Update Book
 
@@ -121,13 +124,19 @@ Supports filtering, and sorting.
 }
 ```
 
+* * *
+
 ### 5\. Delete Book
 
 **DELETE** `/api/books/:bookId`
 
+* * *
+
 ### 6\. Borrow a Book
 
 **POST** `/api/borrow`
+
+* * *
 
 ## 🔧 Installation Guidline:
 

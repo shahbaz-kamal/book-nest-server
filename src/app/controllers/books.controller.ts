@@ -25,7 +25,12 @@ export const getAllBooks = async (
   next: NextFunction
 ) => {
   try {
-    res.send("all book get rout has been hit");
+    const books = await Books.find();
+    res.status(201).json({
+      success: true,
+      message: "Books retrieved successfully",
+      data: books,
+    });
   } catch (error: any) {
     next(error);
   }

@@ -1,183 +1,167 @@
 [
-    {
-      "title": "The Time Traveler's Diary",
-      "author": "Lena Morris",
-      "genre": "FICTION",
-      "isbn": "9780000000001",
-      "description": "A tale of love and paradox across time.",
-      "copies": 12,
-      "available": true
-    },
-    {
-      "title": "Quantum Reality",
-      "author": "Dr. Paul Levin",
-      "genre": "SCIENCE",
-      "isbn": "9780000000002",
-      "description": "An in-depth look into the world of quantum physics.",
-      "copies": 8,
-      "available": true
-    },
-    {
-      "title": "Winds of the North",
-      "author": "Eric Norse",
-      "genre": "HISTORY",
-      "isbn": "9780000000003",
-      "description": "Explores Viking conquests and legacy.",
-      "copies": 6,
-      "available": true
-    },
-    {
-      "title": "The Enchanted Grove",
-      "author": "Amara Benson",
-      "genre": "FANTASY",
-      "isbn": "9780000000004",
-      "description": "A magical forest filled with mythical beings.",
-      "copies": 15,
-      "available": true
-    },
-    {
-      "title": "Living Mindfully",
-      "author": "Susan Gray",
-      "genre": "NON_FICTION",
-      "isbn": "9780000000005",
-      "description": "A guide to daily mindfulness practices.",
-      "copies": 10,
-      "available": true
-    },
-    {
-      "title": "Leonardo da Vinci: The Genius",
-      "author": "Martin Keane",
-      "genre": "BIOGRAPHY",
-      "isbn": "9780000000006",
-      "description": "A journey through the life of the Renaissance polymath.",
-      "copies": 5,
-      "available": true
-    },
-    {
-      "title": "Dreamcatcher's Curse",
-      "author": "Nina Holloway",
-      "genre": "FANTASY",
-      "isbn": "9780000000007",
-      "description": "A fantasy world where dreams dictate reality.",
-      "copies": 7,
-      "available": true
-    },
-    {
-      "title": "The Hidden Cosmos",
-      "author": "Dr. L. Bright",
-      "genre": "SCIENCE",
-      "isbn": "9780000000008",
-      "description": "Understanding black holes and dark matter.",
-      "copies": 9,
-      "available": true
-    },
-    {
-      "title": "Chronicles of Empire",
-      "author": "James Cartwright",
-      "genre": "HISTORY",
-      "isbn": "9780000000009",
-      "description": "Rise and fall of ancient empires.",
-      "copies": 6,
-      "available": true
-    },
-    {
-      "title": "Becoming Elon Musk",
-      "author": "Sandra Pope",
-      "genre": "BIOGRAPHY",
-      "isbn": "9780000000010",
-      "description": "Inside the life of the tech visionary.",
-      "copies": 4,
-      "available": true
-    },
-    {
-      "title": "Fictional Hearts",
-      "author": "Laura Mendel",
-      "genre": "FICTION",
-      "isbn": "9780000000011",
-      "description": "A tale of heartbreak and healing.",
-      "copies": 11,
-      "available": true
-    },
-    {
-      "title": "Atomic Patterns",
-      "author": "Klaus Gern",
-      "genre": "SCIENCE",
-      "isbn": "9780000000012",
-      "description": "The invisible order of matter.",
-      "copies": 5,
-      "available": true
-    },
-    {
-      "title": "How to Think Clearly",
-      "author": "George Tan",
-      "genre": "NON_FICTION",
-      "isbn": "9780000000013",
-      "description": "A practical guide to critical thinking.",
-      "copies": 10,
-      "available": true
-    },
-    {
-      "title": "Rise of the Dragon Queen",
-      "author": "Samantha Vale",
-      "genre": "FANTASY",
-      "isbn": "9780000000014",
-      "description": "A queen rises from ashes to claim her throne.",
-      "copies": 13,
-      "available": true
-    },
-    {
-      "title": "Napoleon: Power and Downfall",
-      "author": "Claude Renaud",
-      "genre": "BIOGRAPHY",
-      "isbn": "9780000000015",
-      "description": "Biography of one of history's greatest generals.",
-      "copies": 3,
-      "available": true
-    },
-    {
-      "title": "Behind the Curtain",
-      "author": "Aria Knoll",
-      "genre": "FICTION",
-      "isbn": "9780000000016",
-      "description": "A suspense thriller with hidden secrets.",
-      "copies": 9,
-      "available": true
-    },
-    {
-      "title": "Seeds of Civilization",
-      "author": "Hannah York",
-      "genre": "HISTORY",
-      "isbn": "9780000000017",
-      "description": "Human progress from ancient to modern eras.",
-      "copies": 6,
-      "available": true
-    },
-    {
-      "title": "Self-Discipline for Success",
-      "author": "Rick Lawson",
-      "genre": "NON_FICTION",
-      "isbn": "9780000000018",
-      "description": "Harness discipline to master any area of life.",
-      "copies": 14,
-      "available": true
-    },
-    {
-      "title": "Inside Marie Curie's Lab",
-      "author": "Alex Witten",
-      "genre": "BIOGRAPHY",
-      "isbn": "9780000000019",
-      "description": "The life and discoveries of a Nobel-winning scientist.",
-      "copies": 4,
-      "available": true
-    },
-    {
-      "title": "The Riftwalker Prophecy",
-      "author": "Derek Hollow",
-      "genre": "FANTASY",
-      "isbn": "9780000000020",
-      "description": "Ancient magic returns to reshape the world.",
-      "copies": 8,
-      "available": true
-    }
-  ]
-  
+  {
+    "title": "Fictional Beginnings",
+    "author": "Alice Monroe",
+    "genre": "FICTION",
+    "isbn": "9780000000001",
+    "description": "A beautiful story of self-discovery.",
+    "copies": 10,
+    "available": true,
+    "createdAt": "2025-06-22T09:00:00.000Z",
+    "updatedAt": "2025-06-22T09:00:00.000Z"
+  },
+  {
+    "title": "Waves of Thought",
+    "author": "Daniel Kahneman",
+    "genre": "NON_FICTION",
+    "isbn": "9780000000002",
+    "description": "Understanding human decision-making.",
+    "copies": 8,
+    "available": true,
+    "createdAt": "2025-06-22T09:01:00.000Z",
+    "updatedAt": "2025-06-22T09:01:00.000Z"
+  },
+  {
+    "title": "Theory of Everything and Anything",
+    "author": "Stephen Hawking",
+    "genre": "FANTASY",
+    "isbn": "9780000000003",
+    "description": "An overview of cosmology and black holes.",
+    "copies": 5,
+    "available": true,
+    "createdAt": "2025-06-22T09:02:00.000Z",
+    "updatedAt": "2025-06-22T09:02:00.000Z"
+  },
+  {
+    "title": "Inside the Atom",
+    "author": "Lisa Randall",
+    "genre": "SCIENCE",
+    "isbn": "9780000000004",
+    "description": "Explores atomic structure and quantum mechanics.",
+    "copies": 7,
+    "available": true,
+    "createdAt": "2025-06-22T09:03:00.000Z",
+    "updatedAt": "2025-06-22T09:03:00.000Z"
+  },
+  {
+    "title": "Echoes of History",
+    "author": "Mary Beard",
+    "genre": "HISTORY",
+    "isbn": "9780000000005",
+    "description": "A deep dive into ancient civilizations.",
+    "copies": 6,
+    "available": true,
+    "createdAt": "2025-06-22T09:04:00.000Z",
+    "updatedAt": "2025-06-22T09:04:00.000Z"
+  },
+  {
+    "title": "Life of Tesla",
+    "author": "Walter Isaacson",
+    "genre": "BIOGRAPHY",
+    "isbn": "9780000000006",
+    "description": "Biography of Nikola Tesla.",
+    "copies": 4,
+    "available": true,
+    "createdAt": "2025-06-22T09:05:00.000Z",
+    "updatedAt": "2025-06-22T09:05:00.000Z"
+  },
+  {
+    "title": "Dragons of the North",
+    "author": "Erin Blackwood",
+    "genre": "FANTASY",
+    "isbn": "9780000000007",
+    "description": "A thrilling tale of dragons and ice.",
+    "copies": 12,
+    "available": true,
+    "createdAt": "2025-06-22T09:06:00.000Z",
+    "updatedAt": "2025-06-22T09:06:00.000Z"
+  },
+  {
+    "title": "The Human Mind",
+    "author": "Noam Chomsky",
+    "genre": "NON_FICTION",
+    "isbn": "9780000000008",
+    "description": "Explores the depths of human cognition.",
+    "copies": 9,
+    "available": true,
+    "createdAt": "2025-06-22T09:07:00.000Z",
+    "updatedAt": "2025-06-22T09:07:00.000Z"
+  },
+  {
+    "title": "Black Holes Explained",
+    "author": "Kip Thorne",
+    "genre": "SCIENCE",
+    "isbn": "9780000000009",
+    "description": "Understanding black holes and spacetime.",
+    "copies": 5,
+    "available": true,
+    "createdAt": "2025-06-22T09:08:00.000Z",
+    "updatedAt": "2025-06-22T09:08:00.000Z"
+  },
+  {
+    "title": "The Roman Empire",
+    "author": "Adrian Goldsworthy",
+    "genre": "HISTORY",
+    "isbn": "9780000000010",
+    "description": "A comprehensive look at Rome’s legacy.",
+    "copies": 6,
+    "available": true,
+    "createdAt": "2025-06-22T09:09:00.000Z",
+    "updatedAt": "2025-06-22T09:09:00.000Z"
+  },
+  {
+    "title": "Logic of the Universe",
+    "author": "Brian Greene",
+    "genre": "SCIENCE",
+    "isbn": "9780000000011",
+    "description": "Examines order and chaos in the cosmos.",
+    "copies": 7,
+    "available": true,
+    "createdAt": "2025-06-22T09:10:00.000Z",
+    "updatedAt": "2025-06-22T09:10:00.000Z"
+  },
+  {
+    "title": "The Art of Logic",
+    "author": "Eugenia Cheng",
+    "genre": "NON_FICTION",
+    "isbn": "9780000000012",
+    "description": "Applying mathematical thinking to life.",
+    "copies": 10,
+    "available": true,
+    "createdAt": "2025-06-22T09:11:00.000Z",
+    "updatedAt": "2025-06-22T09:11:00.000Z"
+  },
+  {
+    "title": "Einstein's Dreams",
+    "author": "Alan Lightman",
+    "genre": "FICTION",
+    "isbn": "9780000000013",
+    "description": "Imaginative tales inspired by relativity.",
+    "copies": 7,
+    "available": true,
+    "createdAt": "2025-06-22T09:12:00.000Z",
+    "updatedAt": "2025-06-22T09:12:00.000Z"
+  },
+  {
+    "title": "Wizard's Oath",
+    "author": "Talia Moonshade",
+    "genre": "FANTASY",
+    "isbn": "9780000000014",
+    "description": "An oath, a spell, a forgotten past.",
+    "copies": 11,
+    "available": true,
+    "createdAt": "2025-06-22T09:13:00.000Z",
+    "updatedAt": "2025-06-22T09:13:00.000Z"
+  },
+  {
+    "title": "Hidden Genius",
+    "author": "Katie Mahoney",
+    "genre": "BIOGRAPHY",
+    "isbn": "9780000000015",
+    "description": "The story of overlooked inventors.",
+    "copies": 6,
+    "available": true,
+    "createdAt": "2025-06-22T09:14:00.000Z",
+    "updatedAt": "2025-06-22T09:14:00.000Z"
+  }
+]

@@ -25,7 +25,29 @@ export const getAllBooks = async (
   next: NextFunction
 ) => {
   try {
-    const books = await Books.find();
+    const { filter, sortBy, sort, limit } = req.query;
+    console.log(filter, sortBy, sort, limit);
+
+    let queryFilter: any = {};
+    let querySort: any = {};
+    let queryLimit: number = 10;
+    if (filter) {
+      queryFilter.genre = filter;
+    }
+
+    if (sortBy && sort) {
+      querySort[sortBy as string] = sort === "asc" ? 1 : -1;
+    }
+
+    if (limit) {
+      queryLimit = parseInt(limit as string);
+    }
+    // console.log("from query sort", querySort);
+
+    const books = await Books.find(queryFilter)
+      .sort(querySort)
+      .limit(queryLimit);
+console.log(books)
     res.status(201).json({
       success: true,
       message: "Books retrieved successfully",

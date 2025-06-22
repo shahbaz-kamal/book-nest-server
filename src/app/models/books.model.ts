@@ -4,8 +4,8 @@ import validator from "validator";
 
 const booksSchema = new Schema<IBook>(
   {
-    title: { type: String, required: true },
-    author: { type: String, required: true },
+    title: { type: String, required: true, trim: true },
+    author: { type: String, required: true, trim: true },
     genre: {
       type: String,
       required: true,
@@ -18,8 +18,8 @@ const booksSchema = new Schema<IBook>(
         "FICTION",
       ],
     },
-    isbn: { type: String, required: true },
-    description: { type: String },
+    isbn: { type: String, required: true, trim: true },
+    description: { type: String, trim: true },
     copies: {
       type: Number,
       required: true,
@@ -30,8 +30,6 @@ const booksSchema = new Schema<IBook>(
   {
     versionKey: false,
     timestamps: true,
-    toJSON: { virtuals: true },
-    toObject: { virtuals: true },
   }
 );
 

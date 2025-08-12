@@ -20,6 +20,9 @@ const booksSchema = new Schema<IBook>(
     },
     isbn: { type: String, required: true, trim: true },
     description: { type: String, trim: true },
+    price:{type:Number},
+    coverPage: { type: String, trim: true },
+    showInHeroSection: { type: Boolean, default: false },
     copies: {
       type: Number,
       required: true,

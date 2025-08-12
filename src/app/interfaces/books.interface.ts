@@ -10,6 +10,9 @@ export interface IBook {
     | "FANTASY";
   isbn: string;
   description: string;
+  coverPage: string;
+  showInHeroSection: boolean;
   copies: number;
+  price: number;
   available: boolean;
 }

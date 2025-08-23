@@ -7,6 +7,8 @@ import cors from "cors";
 const app: Application = express();
 
 // middlewares
+
+const corsOption = { origin: ["http://localhost:5173"] };
 app.use(cors());
 app.use(express.json());
 app.use(logger);
@@ -19,9 +21,8 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Book nest is running  ");
 });
 
-
 // handles 404 error
-app.use((req: Request, res: Response,next:NextFunction) => {
+app.use((req: Request, res: Response, next: NextFunction) => {
   res.status(404).json({
     message: "Route Not Found",
     success: false,
@@ -30,7 +31,7 @@ app.use((req: Request, res: Response,next:NextFunction) => {
       details: `Cannot ${req.method} ${req.originalUrl}`,
     },
   });
-  next()
+  next();
 });
 
 // app.use((error: any, req: Request, res: Response, next: NextFunction) => {
@@ -48,7 +49,7 @@ app.use((req: Request, res: Response,next:NextFunction) => {
 //     error: error.message,
 //   });
 // });
-app.use((error: any, req: Request, res: Response,next:NextFunction) => {
+app.use((error: any, req: Request, res: Response, next: NextFunction) => {
   if (error.name === "ValidationError") {
     res.status(400).json({
       message: "Validation failed",

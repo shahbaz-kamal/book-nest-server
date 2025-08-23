@@ -8,8 +8,8 @@ const app: Application = express();
 
 // middlewares
 
-const corsOption = { origin: ["http://localhost:5173"] };
-app.use(cors());
+const corsOption = { origin: ["http://localhost:5173"], Credential: true };
+app.use(cors(corsOption));
 app.use(express.json());
 app.use(logger);
 

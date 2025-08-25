@@ -30,7 +30,7 @@ export const getAllBooks = async (
 
     let queryFilter: any = {};
     let querySort: any = {};
-    let queryLimit: number = 10;
+    let queryLimit: number;
     if (filter) {
       queryFilter.genre = filter;
     }
@@ -44,9 +44,12 @@ export const getAllBooks = async (
     }
     // console.log("from query sort", querySort);
 
-    const books = await Books.find(queryFilter)
-      .sort(querySort)
-      .limit(queryLimit);
+    let query = Books.find(queryFilter).sort(querySort);
+    if (limit) {
+      query = query.limit(parseInt(limit as string));
+    }
+
+    const books = await query;
     // console.log(books);
     res.status(200).json({
       success: true,

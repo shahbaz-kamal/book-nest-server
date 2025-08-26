@@ -73,6 +73,10 @@ const gettingBorrowedBookSummary = (req, res, next) => __awaiter(void 0, void 0,
                     },
                 },
             },
+            //5 .sort by total quantity in descending order
+            {
+                $sort: { totalQuantity: -1 },
+            },
         ]);
         res.status(201).json({
             success: true,

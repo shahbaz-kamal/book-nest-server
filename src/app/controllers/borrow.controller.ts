@@ -1,4 +1,3 @@
-import { updateBook } from "./books.controller";
 import { NextFunction, Request, Response } from "express";
 import { Books } from "../models/books.model";
 import { Borrow } from "../models/borrow.model";
@@ -71,6 +70,10 @@ export const gettingBorrowedBookSummary = async (
             isbn: "$bookInformation.isbn",
           },
         },
+      },
+      //5 .sort by total quantity in descending order
+      {
+        $sort: { totalQuantity: -1 },
       },
     ]);
     res.status(201).json({

@@ -78,11 +78,14 @@ exports.getSingleBookById = getSingleBookById;
 const updateBook = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const bookId = req.params.bookId;
-        const body = req.body;
+        console.log("bookId", bookId);
+        const body = Object.assign(Object.assign({}, req.body), { price: Number(req.body.price), copies: Number(req.body.copies) });
+        console.log("body", body);
         const book = yield books_model_1.Books.findByIdAndUpdate(bookId, body, {
             new: true,
             runValidators: true,
         });
+        console.log("books===>", book);
         res.status(200).json({
             success: true,
             message: "Book updated successfully",
@@ -97,7 +100,8 @@ exports.updateBook = updateBook;
 const deleteBook = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const bookId = req.params.bookId;
-        yield books_model_1.Books.findByIdAndDelete(bookId);
+        const result = yield books_model_1.Books.findByIdAndDelete(bookId);
+        console.log(result);
         res.status(200).json({
             success: true,
             message: "Book deleted successfully",

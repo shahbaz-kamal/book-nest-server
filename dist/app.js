@@ -10,7 +10,8 @@ const borrow_route_1 = require("./app/routers/borrow.route");
 const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
 // middlewares
-app.use((0, cors_1.default)());
+const corsOption = { origin: ["http://localhost:5173", "https://booknest-by-shahbaz.netlify.app"], Credential: true };
+app.use((0, cors_1.default)(corsOption));
 app.use(express_1.default.json());
 app.use(logger_1.logger);
 //using routes

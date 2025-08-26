@@ -86,12 +86,18 @@ export const updateBook = async (
 ) => {
   try {
     const bookId = req.params.bookId;
-    const body = req.body;
+    console.log("bookId", bookId);
+    const body = {
+      ...req.body,
+      price: Number(req.body.price),
+      copies: Number(req.body.copies),
+    };
+    console.log("body", body);
     const book = await Books.findByIdAndUpdate(bookId, body, {
       new: true,
       runValidators: true,
     });
-
+    console.log("books===>", book);
     res.status(200).json({
       success: true,
       message: "Book updated successfully",
@@ -109,7 +115,8 @@ export const deleteBook = async (
 ) => {
   try {
     const bookId = req.params.bookId;
-    await Books.findByIdAndDelete(bookId);
+    const result = await Books.findByIdAndDelete(bookId);
+    console.log(result);
     res.status(200).json({
       success: true,
       message: "Book deleted successfully",

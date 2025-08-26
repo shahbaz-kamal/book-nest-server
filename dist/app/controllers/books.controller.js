@@ -32,7 +32,7 @@ const getAllBooks = (req, res, next) => __awaiter(void 0, void 0, void 0, functi
         // console.log(filter, sortBy, sort, limit);
         let queryFilter = {};
         let querySort = {};
-        let queryLimit = 10;
+        let queryLimit;
         if (filter) {
             queryFilter.genre = filter;
         }
@@ -43,9 +43,11 @@ const getAllBooks = (req, res, next) => __awaiter(void 0, void 0, void 0, functi
             queryLimit = parseInt(limit);
         }
         // console.log("from query sort", querySort);
-        const books = yield books_model_1.Books.find(queryFilter)
-            .sort(querySort)
-            .limit(queryLimit);
+        let query = books_model_1.Books.find(queryFilter).sort(querySort);
+        if (limit) {
+            query = query.limit(parseInt(limit));
+        }
+        const books = yield query;
         // console.log(books);
         res.status(200).json({
             success: true,

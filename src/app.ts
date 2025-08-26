@@ -8,7 +8,10 @@ const app: Application = express();
 
 // middlewares
 
-const corsOption = { origin: ["http://localhost:5173"], Credential: true };
+const corsOption = {
+  origin: ["http://localhost:5173", "https://booknest-by-shahbaz.netlify.app"],
+  Credential: true,
+};
 app.use(cors(corsOption));
 app.use(express.json());
 app.use(logger);

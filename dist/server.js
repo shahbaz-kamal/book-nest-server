@@ -21,9 +21,9 @@ function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             yield mongoose_1.default.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.xnok4yx.mongodb.net/book-nest?retryWrites=true&w=majority&appName=Cluster0`);
-            console.log("✅ Connected to MongoDB using mongoose");
             const server = app_1.default.listen(port, () => {
-                console.log(`🔥 Note server is running on port ${port}`);
+                console.log(`🔥 BookNest server is running on port ${port}`);
+                console.log("✅ Connected to MongoDB using mongoose");
             });
         }
         catch (error) {
